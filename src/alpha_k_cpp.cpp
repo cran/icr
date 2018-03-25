@@ -38,7 +38,7 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 List alpha_k_cpp(
         NumericMatrix data,
-        CharacterVector method,
+        int metric,
         bool bootstrap,
         bool bootnp,
         int nboot,
@@ -52,9 +52,6 @@ List alpha_k_cpp(
     // number of coders, number of units
     int nC = data.rows();
     int nU = data.cols();
-
-    // metric
-    std::string metric = as<std::string>(method);
 
     // convert R column-major matrix into row-major std::vector
     std::vector<double> reliability_data = as<std::vector<double>>(transpose(data));
@@ -76,7 +73,7 @@ List alpha_k_cpp(
         n_threads = max_threads;
         Rprintf(" Note: Number of specified cores higher than number of available cores.\n");
         Rprintf(" Resetting to available number of %d cores.\n", max_threads);
-    } else if (n_threads < 0) {
+    } else if (n_threads < 1) {
         n_threads = 1;
         Rprintf(" Note: Number of specified cores lower than 1.\n");
         Rprintf(" Resetting to %d core.\n", n_threads);
@@ -155,7 +152,7 @@ List alpha_k_cpp(
 
         List results = List::create(
             Named("alpha") = alpha,
-            Named("method") = method,
+            Named("metric") = metric,
             Named("n_coders") = nC,
             Named("n_units") = nU,
             Named("n_values") = nV,
