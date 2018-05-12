@@ -18,7 +18,7 @@
 
 #' @import ggplot2
 #' @importFrom stats quantile aggregate
-#' @importFrom reshape2 melt
+#' @importFrom tidyr gather
 #' @export
 plot.icr <- function(x, ..., level = 0.95) {
     if (x$bootstrap == FALSE & x$bootnp == FALSE) {
@@ -28,17 +28,18 @@ plot.icr <- function(x, ..., level = 0.95) {
     n_alphas_k  <- length(x$bootstraps)
     n_alphas_np <- length(x$bootstrapsNP)
 
-    df <- data.frame(krippendorff = x$bootstraps, nonparametric = x$bootstrapsNP)
-    if (n_alphas_k > n_alphas_np) {
-        df$nonparametric[(n_alphas_np + 1):n_alphas_k] <- NA
-    } else if (n_alphas_k < n_alphas_np) {
-        df$krippendorff[(n_alphas_k + 1):n_alphas_np] <- NA
-    }
+    max_n_bootstrap <- max(n_alphas_k, n_alphas_np)
 
-    plot_data <- cbind(df, id = 1:nrow(df))
-    plot_data <- melt(plot_data,
-                      id.vars = "id",
-                      measure.vars = c("krippendorff", "nonparametric"))
+    df <- data.frame(id = 1:max_n_bootstrap, krippendorff = NA, nonparametric = NA)
+    df$krippendorff[1:n_alphas_k] <- x$bootstraps
+    df$nonparametric[1:n_alphas_np] <- x$bootstrapsNP
+
+    plot_data <- df
+    plot_data <- gather(df,
+                        key = "variable",
+                        value = "value",
+                        c("krippendorff", "nonparametric"),
+                        factor_key = TRUE)
     plot_data <- plot_data[!is.na(plot_data$value), ]
     plot_data <- plot_data[!is.nan(plot_data$value), ]
     plot_data$technique <- droplevels(plot_data$variable)
