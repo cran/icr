@@ -1,4 +1,4 @@
-f582014e4c7a3badce06e02a875c3a55 *DESCRIPTION
+08196113c1651264bf94204c3feef0e4 *DESCRIPTION
 f519038f15fd0b5a39679a4aa43db2b0 *NAMESPACE
 df9c28fd81a87b77579691c11e38633d *R/RcppExports.R
 9c58fb0e17350ad3a7d641a57900eed0 *R/data.R
@@ -7,7 +7,7 @@ d16ddfb5f7fb564ac20dc2dcb62364c4 *R/plot_icr.R
 c1c730ff71dda79af89166920b851753 *R/print_icr.R
 22719c920ee5888d99a47723d52a2216 *cleanup
 98189dd60124ac8fa5b805fd9d6daf8a *configure
-ad8316636df6bb366027c9a9030ba6d4 *configure.ac
+d6d26f176a9b1fcfbd8e8f22954367b3 *configure.ac
 362f62036d3ab7920d3a13f01215a438 *data/codings.RData
 ed5e0aa9d686a8c8f60bb804cce2eb93 *man/codings.Rd
 497c40218d396645e22cbc1de3027371 *man/krippalpha.Rd
