@@ -1,9 +1,9 @@
-fd062845cb3b38df55969b334258e3f4 *DESCRIPTION
-67d1aa6d97a225929ad3da9b73369c37 *NAMESPACE
+1b62d0fca47e39a3828e7dbe202ef07b *DESCRIPTION
+445045c074a7a1cd5870f0d32be5ce51 *NAMESPACE
 df9c28fd81a87b77579691c11e38633d *R/RcppExports.R
 9c58fb0e17350ad3a7d641a57900eed0 *R/data.R
-4e0196612853054295f41fdb44a102bf *R/krippalpha.R
-a73d785f891aa85223aacac9f2ecf00b *R/plot_icr.R
+8fd6415b9a9264a08fba42554ad9fb41 *R/krippalpha.R
+4833c4fac57ac5bc03f7a315c95f4332 *R/plot_icr.R
 c1c730ff71dda79af89166920b851753 *R/print_icr.R
 22719c920ee5888d99a47723d52a2216 *cleanup
 85c6fdaa963a06fffbacf8f300fe710d *configure
@@ -13,7 +13,7 @@ fb50cd7723f75c3709c44bffffe6571d *man/codings.Rd
 037a601de4aa735491d0b65d975309ae *man/figures/1.png
 8e91294fb3ba731829281addb875cb06 *man/figures/2.png
 eec0b7b7637268de67996ec4cbf77990 *man/figures/3.png
-dba6cbfbf87b41c81f130394b3787189 *man/krippalpha.Rd
+eef53ea9cfba2822315ca9e12289a6b1 *man/krippalpha.Rd
 7f154597b150b8d1dfd422d9dc5a33e0 *src/Makevars.in
 d75f89b94a6d7b50ade66d8acfb955f2 *src/Makevars.win
 a1a8845891304b4bf027979045f08913 *src/RcppExports.cpp
