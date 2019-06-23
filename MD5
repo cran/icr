@@ -1,4 +1,4 @@
-2d7b94ef0667577f1a515718ea84462c *DESCRIPTION
+1e155663b8aaf343fbbd8146076d25c3 *DESCRIPTION
 87775b7a46758f83c8f2318d6f64a1f9 *NAMESPACE
 df9c28fd81a87b77579691c11e38633d *R/RcppExports.R
 9c58fb0e17350ad3a7d641a57900eed0 *R/data.R
@@ -20,8 +20,8 @@ d75f89b94a6d7b50ade66d8acfb955f2 *src/Makevars.win
 a1a8845891304b4bf027979045f08913 *src/RcppExports.cpp
 c9887b92d01e6107d501385ef71d9c52 *src/RngStream.cpp
 d5f15684c76154b8a87791c8f98f241b *src/RngStream.h
-830f9b07003f58c3569f6fc2b7cbe549 *src/alpha.cpp
-56177223562715f2450e6ebb8baab615 *src/alpha.h
+e4de0a769153fb777547daf3edb05740 *src/alpha.cpp
+df00b559270a54b22d6d601b7d72d346 *src/alpha.h
 f9c290a857efb414b33dfdf797222361 *src/alpha_k_cpp.cpp
-0de325df33ada76718db5f259c300696 *src/bootstrap_alpha.cpp
-216420ba332aa6b924427a5dbf74f9b4 *src/bootstrap_alpha.h
+4f628702417b5d2c94fc9aa8b7054f2b *src/bootstrap_alpha.cpp
+f4b58da4af1462ec88e7f0c023fc4452 *src/bootstrap_alpha.h
