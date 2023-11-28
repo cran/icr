@@ -1,8 +1,8 @@
 Package: icr
 Type: Package
-Date: 2023-04-23
+Date: 2023-11-28
 Title: Compute Krippendorff's Alpha
-Version: 0.6.3
+Version: 0.6.4
 Author: Alexander Staudt [aut, cre], Pierre L'Ecuyer [ctb] (author of the C++ RNG code)
 Maintainer: Alexander Staudt <staudtlex@live.de>
 Description: Provides functions to compute and plot Krippendorff's inter-coder 
@@ -19,6 +19,6 @@ LinkingTo: Rcpp
 Suggests: ggplot2
 RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2023-04-23 17:28:01 UTC; as
+Packaged: 2023-11-28 22:51:27 UTC; user
 Repository: CRAN
-Date/Publication: 2023-04-23 19:20:02 UTC
+Date/Publication: 2023-11-28 23:10:02 UTC
