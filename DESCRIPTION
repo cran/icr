@@ -1,9 +1,19 @@
 Package: icr
 Type: Package
-Date: 2024-03-03
+Date: 2024-10-30
 Title: Compute Krippendorff's Alpha
-Version: 0.6.5
-Author: Alexander Staudt [aut, cre], Pierre L'Ecuyer [ctb] (author of the C++ RNG code)
+Version: 0.6.6
+Authors@R: c(person(given = "Alexander", 
+                    family = "Staudt", 
+                    role = c("aut", "cre"), 
+                    email = "staudtlex@live.de"),
+             person(given = "Pierre", 
+                    family = "L'Ecuyer", 
+                    role = "ctb", 
+                    comment = "author of the C++ RNG code"),
+             person(given = "Chung-hong", 
+                    family = "Chan", 
+                    role = "ctb"))
 Maintainer: Alexander Staudt <staudtlex@live.de>
 Description: Provides functions to compute and plot Krippendorff's inter-coder 
     reliability coefficient alpha and bootstrapped uncertainty estimates 
@@ -16,9 +26,12 @@ Encoding: UTF-8
 LazyData: true
 Imports: Rcpp (>= 0.12.9)
 LinkingTo: Rcpp
-Suggests: ggplot2
-RoxygenNote: 7.2.3
+Suggests: ggplot2, tinytest
+RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2024-03-03 18:27:22 UTC; user
+Packaged: 2024-10-31 15:31:59 UTC; as
+Author: Alexander Staudt [aut, cre],
+  Pierre L'Ecuyer [ctb] (author of the C++ RNG code),
+  Chung-hong Chan [ctb]
 Repository: CRAN
-Date/Publication: 2024-03-03 19:00:02 UTC
+Date/Publication: 2024-10-31 17:00:02 UTC
